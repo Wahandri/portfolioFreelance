@@ -2,8 +2,28 @@
   font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   font-weight: 400;
-  color: #222;
-  background-color: #f5f7fb;
+  color-scheme: dark;
+  --color-background: #0b1628;
+  --color-background-soft: #0f1f35;
+  --color-surface: #111f34;
+  --color-surface-contrast: rgba(255, 255, 255, 0.04);
+  --color-text-primary: #f4f6fb;
+  --color-text-secondary: rgba(223, 230, 252, 0.75);
+  --color-heading: #f8f9ff;
+  --color-accent: #4ea8ff;
+  --color-accent-strong: #1f7dff;
+  --color-outline: rgba(78, 168, 255, 0.45);
+  --color-card-border: rgba(255, 255, 255, 0.08);
+  --color-chip-bg: rgba(78, 168, 255, 0.18);
+  --color-chip-text: #dbeafe;
+  --color-input-background: rgba(17, 31, 52, 0.9);
+  --color-input-border: rgba(255, 255, 255, 0.1);
+  --color-input-placeholder: rgba(223, 230, 252, 0.5);
+  --color-header-background: rgba(9, 18, 34, 0.9);
+  --color-header-border: rgba(255, 255, 255, 0.05);
+  --shadow-soft: 0 20px 60px rgba(4, 12, 25, 0.45);
+  --shadow-medium: 0 25px 70px rgba(4, 12, 25, 0.55);
+  --shadow-strong: 0 30px 80px rgba(4, 12, 25, 0.65);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -21,7 +41,34 @@ a:hover {
 body {
   margin: 0;
   min-height: 100vh;
-  background-color: #f5f7fb;
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.light-theme {
+  color-scheme: light;
+  --color-background: #f5f7fb;
+  --color-background-soft: #f0f4fc;
+  --color-surface: #ffffff;
+  --color-surface-contrast: rgba(13, 47, 115, 0.04);
+  --color-text-primary: #222;
+  --color-text-secondary: rgba(34, 34, 34, 0.75);
+  --color-heading: #0d2f73;
+  --color-accent: #007bff;
+  --color-accent-strong: #0056b3;
+  --color-outline: rgba(0, 123, 255, 0.35);
+  --color-card-border: rgba(0, 0, 0, 0.08);
+  --color-chip-bg: rgba(0, 123, 255, 0.12);
+  --color-chip-text: #0d2f73;
+  --color-input-background: #f7f9fe;
+  --color-input-border: rgba(0, 0, 0, 0.1);
+  --color-input-placeholder: rgba(34, 34, 34, 0.45);
+  --color-header-background: rgba(255, 255, 255, 0.95);
+  --color-header-border: rgba(13, 47, 115, 0.1);
+  --shadow-soft: 0 20px 60px rgba(13, 47, 115, 0.1);
+  --shadow-medium: 0 25px 70px rgba(13, 47, 115, 0.12);
+  --shadow-strong: 0 30px 80px rgba(13, 47, 115, 0.18);
 }
 
 img {
