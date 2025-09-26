@@ -1,4 +1,5 @@
 import './Hero.css'
+import heroImg from '../../images/hero.jpg'
 
 function Hero() {
   return (
@@ -24,7 +25,7 @@ function Hero() {
       <div className="hero-visual">
         <div className="hero-illustration">
           <img
-            src="https://via.placeholder.com/500x400.png?text=Tu+Web+Profesional"
+            src={heroImg}
             alt="Ilustración de proyecto web"
           />
         </div>

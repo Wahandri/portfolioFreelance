@@ -20,9 +20,7 @@ function Header({ theme, onToggleTheme }) {
   return (
     <header className="header">
       <nav className="navbar" aria-label="Principal">
-        <a className="logo" href="#inicio" onClick={closeMenu}>
-          Wahandri
-        </a>
+        <img src="/logotipo.png" alt="Logo" className="logo" />
         <div className="navbar-content">
           <ul className={`nav-links ${menuOpen ? 'nav-open' : ''}`}>
             {navLinks.map(({ label, href }) => (
@@ -41,7 +39,7 @@ function Header({ theme, onToggleTheme }) {
             title={`Cambiar a modo ${nextThemeLabel}`}
           >
             <span aria-hidden="true" className="theme-toggle__icon">
-              {theme === 'dark' ? '🌙' : '☀️'}
+              {theme === 'dark' ? '☀️' : '🌙'}
             </span>
           </button>
           <button
