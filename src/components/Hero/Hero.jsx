@@ -1,5 +1,5 @@
 import './Hero.css';
-import { heroContent } from '../data';
+import { heroContent } from '../../data';
 
 const Hero = () => {
   return (
@@ -9,6 +9,7 @@ const Hero = () => {
           {heroContent.title}
         </h1>
         <p className="hero__subtitle">{heroContent.subtitle}</p>
+        <p className="hero__price">{heroContent.priceHighlight}</p>
         <a className="hero__cta button-glow" href="#contacto">
           {heroContent.cta}
         </a>

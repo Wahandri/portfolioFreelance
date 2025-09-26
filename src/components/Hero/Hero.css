@@ -27,6 +27,14 @@
   color: var(--color-muted);
 }
 
+.hero__price {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
 .hero__cta {
   align-self: flex-start;
 }

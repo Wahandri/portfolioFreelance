@@ -1,5 +1,5 @@
 import './PortfolioSection.css';
-import { projects } from '../data';
+import { projects } from '../../data';
 
 const PortfolioSection = () => {
   return (

@@ -8,6 +8,7 @@ export const navLinks = [
 export const heroContent = {
   title: 'Desarrollador Web Freelance',
   subtitle: 'Diseño y desarrollo de landing pages creativas y modernas',
+  priceHighlight: 'Landing page básica de una página por 250€',
   cta: 'Contáctame',
 };
 

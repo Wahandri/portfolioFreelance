@@ -1,5 +1,5 @@
 import './ServicesSection.css';
-import { services } from '../data';
+import { services } from '../../data';
 
 const ServicesSection = () => {
   return (
@@ -7,6 +7,9 @@ const ServicesSection = () => {
       <div className="section-header">
         <h2>Servicios</h2>
         <p>Soluciones enfocadas en darle vida digital a tu marca.</p>
+        <p className="services-section__price-note">
+          Portfolio básico de una página por <strong>250€</strong>.
+        </p>
       </div>
       <div className="services-grid">
         {services.map((service) => (
