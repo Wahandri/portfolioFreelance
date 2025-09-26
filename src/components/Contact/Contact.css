@@ -15,7 +15,7 @@
 
 .contact-info p {
   margin: 0;
-  color: rgba(34, 34, 34, 0.75);
+  color: var(--color-text-secondary);
 }
 
 .contact-direct {
@@ -26,7 +26,7 @@
 }
 
 .contact-direct a {
-  color: #007bff;
+  color: var(--color-accent);
 }
 
 .contact-direct a:hover {
@@ -41,30 +41,31 @@
 .contact-socials a {
   padding: 0.5rem 1rem;
   border-radius: 999px;
-  background-color: rgba(0, 123, 255, 0.12);
-  color: #0d2f73;
+  background-color: var(--color-chip-bg);
+  color: var(--color-chip-text);
   font-weight: 600;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
 .contact-socials a:hover {
-  background-color: #007bff;
+  background-color: var(--color-accent);
   color: #fff;
   transform: translateY(-2px);
 }
 
 .contact-form {
-  background: #ffffff;
+  background: var(--color-surface);
   border-radius: 24px;
   padding: 2.5rem 2rem;
-  box-shadow: 0 25px 55px rgba(13, 47, 115, 0.12);
+  box-shadow: var(--shadow-medium);
   display: grid;
   gap: 1rem;
+  border: 1px solid var(--color-card-border);
 }
 
 .contact-form label {
   font-weight: 600;
-  color: #0d2f73;
+  color: var(--color-heading);
 }
 
 .contact-form input,
@@ -72,17 +73,23 @@
   width: 100%;
   padding: 0.85rem 1rem;
   border-radius: 12px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: #f7f9fe;
+  border: 1px solid var(--color-input-border);
+  background-color: var(--color-input-background);
+  color: var(--color-text-primary);
   font-family: inherit;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: var(--color-input-placeholder);
+}
+
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: #007bff;
+  border-color: var(--color-accent);
   outline: none;
-  box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.15);
+  box-shadow: 0 0 0 4px var(--color-outline);
 }
 
 @media (max-width: 900px) {

@@ -2,25 +2,33 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 10px 30px rgba(13, 47, 115, 0.08);
+  background: var(--color-header-background);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--color-header-border);
 }
 
 .navbar {
+  position: relative;
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1.5rem;
 }
 
 .logo {
   font-weight: 700;
   font-size: 1.5rem;
   letter-spacing: 0.8px;
-  color: #0d2f73;
+  color: var(--color-heading);
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 .nav-links {
@@ -35,6 +43,7 @@
   font-weight: 500;
   transition: color 0.3s ease, transform 0.3s ease;
   position: relative;
+  color: var(--color-text-primary);
 }
 
 .nav-links a::after {
@@ -44,17 +53,41 @@
   bottom: -6px;
   width: 0;
   height: 2px;
-  background-color: #007bff;
+  background-color: var(--color-accent);
   transition: width 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: #007bff;
+  color: var(--color-accent);
   transform: translateY(-1px);
 }
 
 .nav-links a:hover::after {
   width: 100%;
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  border: 1px solid var(--color-card-border);
+  background: var(--color-surface);
+  color: var(--color-heading);
+  cursor: pointer;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: translateY(-2px);
+  border-color: var(--color-accent);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.theme-toggle__icon {
+  font-size: 1.1rem;
 }
 
 .menu-toggle {
@@ -71,7 +104,7 @@
   display: block;
   width: 24px;
   height: 2px;
-  background-color: #222;
+  background-color: var(--color-heading);
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
@@ -88,6 +121,10 @@
 }
 
 @media (max-width: 768px) {
+  .navbar-content {
+    gap: 0.75rem;
+  }
+
   .menu-toggle {
     display: flex;
   }
@@ -97,14 +134,15 @@
     top: 70px;
     right: 1.5rem;
     flex-direction: column;
-    background-color: #ffffff;
+    background-color: var(--color-surface);
     padding: 1.5rem;
     border-radius: 16px;
-    box-shadow: 0 18px 40px rgba(13, 47, 115, 0.15);
+    box-shadow: var(--shadow-medium);
     opacity: 0;
     pointer-events: none;
     transform: translateY(-10px);
     transition: opacity 0.3s ease, transform 0.3s ease;
+    border: 1px solid var(--color-card-border);
   }
 
   .nav-links.nav-open {
