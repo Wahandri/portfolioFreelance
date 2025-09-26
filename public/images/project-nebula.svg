@@ -1,0 +1,13 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00ff95" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#0b1f2a" stop-opacity="0.9" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="#1f1f1f" />
+  <circle cx="400" cy="300" r="260" fill="url(#grad)" opacity="0.75" />
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-size="48" fill="#f5f5f5" opacity="0.85">
+    Nebula Studio
+  </text>
+</svg>

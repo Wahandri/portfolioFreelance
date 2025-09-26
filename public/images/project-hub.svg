@@ -1,0 +1,15 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="hub" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#00ff95" stop-opacity="0.7" />
+      <stop offset="70%" stop-color="#1a1a1a" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0d0d0d" stop-opacity="1" />
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="#101010" />
+  <rect x="150" y="120" width="500" height="360" rx="24" fill="none" stroke="#00ff95" stroke-opacity="0.4" stroke-width="3" />
+  <circle cx="400" cy="300" r="220" fill="url(#hub)" />
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-size="48" fill="#f5f5f5" opacity="0.85">
+    Creators Hub
+  </text>
+</svg>

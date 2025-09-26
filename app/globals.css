@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-base text-light font-body antialiased;
+}
+
+a {
+  @apply text-light transition-colors duration-300;
+}
+
+a:hover {
+  @apply text-accent;
+}
+
+.matrix-overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(rgba(31, 31, 31, 0.2), rgba(31, 31, 31, 0.6)),
+    repeating-linear-gradient(0deg, rgba(0, 255, 149, 0.08), rgba(0, 255, 149, 0.08) 2px, transparent 2px, transparent 6px);
+  opacity: 0.65;
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+
+.section-fade {
+  @apply opacity-0;
+  animation: fade-in 0.9s ease-out forwards;
+}
+
+.glow-border {
+  box-shadow: 0 0 0 1px rgba(0, 255, 149, 0.3), 0 0 25px rgba(0, 255, 149, 0.2);
+}

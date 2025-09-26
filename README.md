@@ -1,16 +1,43 @@
-# React + Vite
+# Portfolio Freelance - Wahandri
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Base profesional para el portfolio de Wahandri, desarrollador web freelance junior especializado en landing pages creativas. Construido con **Next.js 13 (App Router)** y **Tailwind CSS**.
 
-Currently, two official plugins are available:
+## Características
+- Diseño oscuro con acentos en verde neón inspirado en estética Matrix/cyberpunk.
+- Componentes modulares ubicados en `components/` para facilitar personalización.
+- Contenido dinámico centralizado en `data/siteData.ts` (navegación, proyectos, servicios, redes, etc.).
+- Animaciones suaves con Tailwind (hover, glow, fade-in).
+- Secciones completas: Hero, Portfolio, Servicios, Sobre mí, Contacto y Footer.
+- Layout responsive optimizado para móvil, tablet y escritorio.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Requisitos previos
+- Node.js 18 o superior.
+- npm 9 o superior.
 
-## React Compiler
+## Instalación
+```bash
+npm install
+```
+> Si aparece un error de red al instalar dependencias en entornos restringidos, vuelve a ejecutar el comando en tu entorno local con acceso al registro de npm.
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Scripts disponibles
+- `npm run dev` – Inicia el servidor de desarrollo en `http://localhost:3000`.
+- `npm run build` – Genera la build de producción.
+- `npm start` – Ejecuta la build de producción.
+- `npm run lint` – Ejecuta las reglas de linting de Next.js.
 
-## Expanding the ESLint configuration
+## Personalización
+- Actualiza el contenido en `data/siteData.ts` para modificar proyectos, servicios y enlaces.
+- Sustituye las imágenes de `public/images/` por capturas reales de tus proyectos.
+- Ajusta colores, tipografías o animaciones en `tailwind.config.ts` y `app/globals.css`.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Estructura de carpetas
+```
+app/              # Páginas usando el App Router de Next.js
+components/       # Componentes UI reutilizables
+data/             # Configuración y contenido dinámico
+public/images/    # Recursos estáticos (placeholders para proyectos)
+```
+
+---
+Hecho con creatividad para destacar la propuesta de Wahandri.
