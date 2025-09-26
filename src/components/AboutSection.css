@@ -1,0 +1,36 @@
+.about-section {
+  padding: 4rem 2rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  align-items: start;
+}
+
+.about-section__content h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 1rem;
+}
+
+.about-section__content p {
+  color: var(--color-muted);
+  line-height: 1.7;
+}
+
+.about-section__skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill-tag {
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 255, 149, 0.4);
+  background: rgba(0, 255, 149, 0.1);
+  color: var(--color-text);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
