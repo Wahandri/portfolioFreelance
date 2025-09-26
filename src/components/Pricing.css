@@ -1,0 +1,87 @@
+.pricing {
+  text-align: center;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+
+.pricing-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 25px 50px rgba(13, 47, 115, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.pricing-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 30px 70px rgba(13, 47, 115, 0.14);
+}
+
+.pricing-card.featured {
+  background: linear-gradient(145deg, #007bff, #0056b3);
+  color: #fff;
+  transform: translateY(-8px);
+}
+
+.pricing-card.featured:hover {
+  box-shadow: 0 35px 80px rgba(0, 123, 255, 0.4);
+}
+
+.pricing-header h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.pricing-price {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 0.5rem 0 0;
+}
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.75rem;
+  color: inherit;
+}
+
+.pricing-card ul li {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.pricing-card ul li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: currentColor;
+}
+
+.pricing-card .btn-outline {
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.pricing-card .btn-outline:hover {
+  color: #fff;
+}
+
+.pricing-card.featured .btn-primary {
+  background: #fff;
+  color: #0056b3;
+  box-shadow: 0 18px 40px rgba(255, 255, 255, 0.25);
+}
+
+.pricing-card.featured .btn-primary:hover {
+  background: rgba(255, 255, 255, 0.95);
+}
