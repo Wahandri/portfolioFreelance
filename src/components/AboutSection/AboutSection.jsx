@@ -1,5 +1,5 @@
 import './AboutSection.css';
-import { skills } from '../data';
+import { skills } from '../../data';
 
 const AboutSection = () => {
   return (

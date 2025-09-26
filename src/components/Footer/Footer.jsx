@@ -1,5 +1,5 @@
 import './Footer.css';
-import { navLinks } from '../data';
+import { navLinks } from '../../data';
 
 const Footer = () => {
   return (

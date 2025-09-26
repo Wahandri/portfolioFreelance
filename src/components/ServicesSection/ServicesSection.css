@@ -2,6 +2,13 @@
   padding: 4rem 2rem;
 }
 
+.services-section__price-note {
+  margin-top: 0.75rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  letter-spacing: 0.04em;
+}
+
 .services-grid {
   display: grid;
   gap: 2rem;

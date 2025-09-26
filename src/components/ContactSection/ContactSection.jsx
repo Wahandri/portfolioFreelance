@@ -1,5 +1,5 @@
 import './ContactSection.css';
-import { socialLinks } from '../data';
+import { socialLinks } from '../../data';
 
 const ContactSection = () => {
   return (

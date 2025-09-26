@@ -1,10 +1,10 @@
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import PortfolioSection from './components/PortfolioSection';
-import ServicesSection from './components/ServicesSection';
-import AboutSection from './components/AboutSection';
-import ContactSection from './components/ContactSection';
-import Footer from './components/Footer';
+import Navbar from './components/Navbar/Navbar';
+import Hero from './components/Hero/Hero';
+import PortfolioSection from './components/PortfolioSection/PortfolioSection';
+import ServicesSection from './components/ServicesSection/ServicesSection';
+import AboutSection from './components/AboutSection/AboutSection';
+import ContactSection from './components/ContactSection/ContactSection';
+import Footer from './components/Footer/Footer';
 import './App.css';
 
 const App = () => {
