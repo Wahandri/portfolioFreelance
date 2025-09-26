@@ -1,25 +1,26 @@
 import './ServicesSection.css';
-import { services } from '../../data';
+import { plans } from '../../data';
 
 const ServicesSection = () => {
   return (
-    <section className="services-section fade-in" id="servicios">
+    <section className="services-section fade-in" id="planes">
       <div className="section-header">
-        <h2>Servicios</h2>
-        <p>Soluciones enfocadas en darle vida digital a tu marca.</p>
+        <h2>Planes a la medida de tu lanzamiento</h2>
+        <p>Elige la propuesta que mejor se adapte al momento actual de tu negocio.</p>
         <p className="services-section__price-note">
-          Portfolio básico de una página por <strong>250€</strong>.
+          Todos los planes incluyen copywriting, diseño responsive y optimización SEO técnica.
         </p>
       </div>
       <div className="services-grid">
-        {services.map((service) => (
-          <article key={service.id} className="service-card">
+        {plans.map((plan) => (
+          <article key={plan.id} className="service-card">
             <div className="service-card__icon" aria-hidden="true">
               <span />
             </div>
             <div className="service-card__content">
-              <h3>{service.title}</h3>
-              <p>{service.description}</p>
+              <h3>{plan.title}</h3>
+              <p>{plan.description}</p>
+              <p className="service-card__price">{plan.price}</p>
             </div>
           </article>
         ))}

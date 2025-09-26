@@ -49,3 +49,11 @@
 .service-card__content p {
   color: var(--color-muted);
 }
+
+.service-card__price {
+  margin-top: 0.75rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  letter-spacing: 0.05em;
+}
