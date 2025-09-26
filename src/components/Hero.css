@@ -12,8 +12,8 @@
   display: inline-block;
   padding: 0.4rem 0.9rem;
   border-radius: 999px;
-  background-color: rgba(0, 123, 255, 0.12);
-  color: #0d2f73;
+  background-color: var(--color-chip-bg);
+  color: var(--color-chip-text);
   font-weight: 600;
   letter-spacing: 0.4px;
   margin-bottom: 1.5rem;
@@ -22,18 +22,18 @@
 .hero h1 {
   font-size: clamp(2.6rem, 3vw + 1rem, 3.5rem);
   margin: 0 0 1.5rem;
-  color: #0d2f73;
+  color: var(--color-heading);
 }
 
 .hero p {
   font-size: 1.1rem;
   max-width: 540px;
   margin-bottom: 2.5rem;
-  color: rgba(34, 34, 34, 0.8);
+  color: var(--color-text-secondary);
 }
 
 .highlight {
-  color: #007bff;
+  color: var(--color-accent);
 }
 
 .hero-actions {
@@ -50,9 +50,11 @@
 .hero-illustration {
   border-radius: 32px;
   overflow: hidden;
-  box-shadow: 0 30px 60px rgba(13, 47, 115, 0.15);
+  box-shadow: var(--shadow-strong);
   transform: translateY(0);
   transition: transform 0.4s ease;
+  border: 1px solid var(--color-card-border);
+  background: var(--color-surface);
 }
 
 .hero-illustration:hover {

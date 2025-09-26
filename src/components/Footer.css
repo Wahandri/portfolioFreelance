@@ -1,8 +1,12 @@
 .footer {
-  background-color: #0d2f73;
+  background: linear-gradient(145deg, rgba(12, 28, 52, 0.96), rgba(6, 17, 34, 0.96));
   color: #ffffff;
   padding: 2rem 1.5rem;
   margin-top: 4rem;
+}
+
+body.light-theme .footer {
+  background: #0d2f73;
 }
 
 .footer-content {
@@ -24,10 +28,14 @@
 }
 
 .footer-nav a {
-  color: #ffffff;
+  color: inherit;
   transition: color 0.3s ease;
 }
 
 .footer-nav a:hover {
   color: #aad4ff;
+}
+
+body.light-theme .footer-nav a:hover {
+  color: #dbeafe;
 }
