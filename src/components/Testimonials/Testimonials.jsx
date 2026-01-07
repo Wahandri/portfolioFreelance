@@ -1,4 +1,5 @@
 import './Testimonials.css'
+import Section from '../ui/Section'
 
 const testimonials = [
   {
@@ -26,23 +27,31 @@ const testimonials = [
 
 function Testimonials() {
   return (
-    <section className="section testimonials" id="testimonios">
-      <h2 className="section-title">Clientes felices que recomiendan mi trabajo</h2>
+    <Section className="testimonials" id="testimonios" background="soft">
+      <div className="section-header">
+        <h2 className="section-title">Clientes felices</h2>
+        <p className="section-subtitle">Lo que dicen quienes ya han confiado en mí.</p>
+      </div>
+
       <div className="testimonials-grid">
         {testimonials.map((testimonial) => (
           <article key={testimonial.name} className="testimonial-card">
-            <div className="testimonial-header">
-              <img src={testimonial.avatar} alt={testimonial.name} />
-              <div>
+            <div className="testimonial-content">
+              <p>“{testimonial.quote}”</p>
+            </div>
+            <div className="testimonial-author">
+              <div className="author-avatar">
+                {testimonial.name.charAt(0)}
+              </div>
+              <div className="author-info">
                 <h3>{testimonial.name}</h3>
                 <span>{testimonial.role}</span>
               </div>
             </div>
-            <p>“{testimonial.quote}”</p>
           </article>
         ))}
       </div>
-    </section>
+    </Section>
   )
 }
 

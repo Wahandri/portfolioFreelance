@@ -1,32 +1,35 @@
 import './Hero.css'
 import heroImg from '../../images/hero.jpg'
+import Button from '../ui/Button'
 
 function Hero() {
   return (
     <section className="hero" id="inicio">
       <div className="hero-content">
-        <span className="hero-tag">Desarrollo web freelance</span>
+        <span className="hero-tag">Desarrollo Web Freelance</span>
         <h1>
-          ¿Necesitas una <span className="highlight">página web moderna</span> para tu negocio?
+          Ayudo a pequeños negocios a <span className="highlight">vender más</span> con webs rápidas y modernas.
         </h1>
         <p>
-          Soy Wahandri, desarrollador web freelance. Creo landing pages rápidas, creativas y
-          profesionales para impulsar tus ventas.
+          Diseño y desarrollo web enfocado en resultados. Convierte visitantes en clientes
+          sin complicaciones técnicas ni mantenimientos costosos.
         </p>
         <div className="hero-actions">
-          <a href="#contacto" className="btn-primary">
-            Pide tu web ahora
+          <a href="#servicios" tabIndex="-1">
+            <Button variant="primary" size="large">Ver Servicios</Button>
           </a>
-          <a href="#ejemplos" className="btn-outline">
-            Ver ejemplos
+          <a href="#contacto" tabIndex="-1">
+            <Button variant="secondary" size="large">Hablemos</Button>
           </a>
         </div>
       </div>
       <div className="hero-visual">
         <div className="hero-illustration">
           <img
-            src={heroImg}
-            alt="Ilustración de proyecto web"
+            src={heroImg.src}
+            alt="Estrategia digital y desarrollo web"
+            width={600}
+            height={400}
           />
         </div>
       </div>

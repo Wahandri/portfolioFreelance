@@ -1,16 +1,21 @@
+'use client'
+
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 import './Header.css'
 
 const navLinks = [
-  { label: 'Inicio', href: '#inicio' },
-  { label: 'Servicios', href: '#servicios' },
-  { label: 'Ejemplos', href: '#ejemplos' },
-  { label: 'Precios', href: '#precios' },
-  { label: 'Contacto', href: '#contacto' },
+  { label: 'Inicio', href: '/' },
+  { label: 'Servicios', href: '/servicios' },
+  { label: 'Cómo trabajo', href: '/proceso' },
+  { label: 'Portfolio', href: '/portfolio' },
+  { label: 'Contacto', href: '/contacto' },
 ]
 
 function Header({ theme, onToggleTheme }) {
   const [menuOpen, setMenuOpen] = useState(false)
+  const pathname = usePathname()
 
   const toggleMenu = () => setMenuOpen((open) => !open)
   const closeMenu = () => setMenuOpen(false)
@@ -20,14 +25,20 @@ function Header({ theme, onToggleTheme }) {
   return (
     <header className="header">
       <nav className="navbar" aria-label="Principal">
-        <img src="/logotipo.png" alt="Logo" className="logo" />
+        <Link href="/" className="logo-text" onClick={closeMenu}>
+          Wahandri<span className="highlight">.dev</span>
+        </Link>
         <div className="navbar-content">
           <ul className={`nav-links ${menuOpen ? 'nav-open' : ''}`}>
             {navLinks.map(({ label, href }) => (
               <li key={href}>
-                <a href={href} onClick={closeMenu}>
+                <Link
+                  href={href}
+                  onClick={closeMenu}
+                  className={pathname === href ? 'active' : ''}
+                >
                   {label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
